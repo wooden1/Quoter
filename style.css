@@ -1,0 +1,45 @@
+/* 🥕 */
+:root{
+--main-clr: #0088e6;
+--quote-box: #50e6c0;
+--text: #98b0a8;
+--author-clr: #364b44;
+}
+#container{
+    background: var(--main);
+    display: grid;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    place-items: center center;
+    /* width: 80%; */
+}
+#quote-box{
+    background: var(--quote-box);
+    max-width: 5rem;
+}
+#text, #new-quote{
+    color: var(--text);
+}
+#author{
+    color: var(--author-clr)
+}
+/* #tweet-quote{
+
+} */
+.fa-twitter{
+    color: oldlace;
+    overflow: hidden;
+    max-width: 2.4em;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+    max-height: 2.15em;
+    white-space: nowrap;
+}
+button{
+background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+}
+a{
+    text-decoration: none;
+}
