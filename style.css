@@ -1,44 +1,59 @@
 /* 🥕 */
 :root{
 --main-clr: #0088e6;
---quote-box: #50e6c0;
---text: #98b0a8;
+--quote-box-clr: #50e6c0;
+--text-clr: #98b0a8;
 --author-clr: #364b44;
 }
 #container{
-    background: var(--main);
+    background: var(--main-clr);
     display: grid;
+    grid-template-rows: repeat(auto-flow, 1f);
+    grid-template-columns: repeat(auto, 1f);
     box-sizing: border-box;
     height: 100vh;
     margin: auto;
-    padding: 0;
     place-items: center center;
-    /* width: 80%; */
+    width: 100vw;
 }
 #quote-box{
-    background: var(--quote-box);
-    max-width: 5rem;
+    position: relative;
+    display: table;
+    background: var(--quote-box-clr);
+    max-width: 450px;
+    height: 20vh;
+    padding: 3em 3.5em;
 }
 #text, #new-quote{
-    color: var(--text);
+    color: var(--text-clr);
+    min-width: 2.5em;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.8em;
 }
 #author{
-    color: var(--author-clr)
+    color: var(--author-clr);
+    text-align: end;
 }
-/* #tweet-quote{
+/* #tweet--clrquote{
 
 } */
 .fa-twitter{
     color: oldlace;
     overflow: hidden;
-    max-width: 2.4em;
-    /* padding-left: 0; */
-    /* padding-right: 0; */
-    max-height: 2.15em;
+    font-size: 5rem;
     white-space: nowrap;
+
 }
 button{
-background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+/* background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15)); */
+/* min-width:200px; */
+margin-top: 10px;
+border:2px solid #46b8da;
+font-family: inherit;
+font-weight: bold;
+padding:5px;
 }
 a{
     text-decoration: none;
