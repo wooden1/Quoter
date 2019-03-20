@@ -5,3 +5,5 @@ const quoteHandler = (arr)=>{arr.forEach((quote) => quote);
 }
 quoteHandler(quotes);
 
+
+
