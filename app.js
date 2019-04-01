@@ -7,7 +7,7 @@ $(document).ready(() => {
         $('#author').html('');
         $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", (a) => {
             
-            $("#text").append(`${a[0].content}`);
+            $("#text").append(`<i class="fas fa-quote-left"></i>${a[0].content}`);
             $("#author").append(`&mdash; ${a[0].title}`);
         });   
     });
